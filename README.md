@@ -23,6 +23,7 @@ Through this project, I aimed to gain a deep understanding of Docker networking 
 
 ## 🏗️ Project Architecture
 
+The project implements a multi-layered network architecture utilizing Docker's native networking capabilities and custom bridge networks.
 ```mermaid
 graph LR
   subgraph Docker Host

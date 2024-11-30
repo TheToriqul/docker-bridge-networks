@@ -1,0 +1,17 @@
+# docker-compose.yml
+version: '3.8'
+services:
+  web:
+    image: my-web-app
+    networks:
+      - frontend
+  db:
+    image: my-database
+    networks:
+      - backend
+
+networks:
+  frontend:
+    driver: overlay
+  backend:
+    driver: overlay
